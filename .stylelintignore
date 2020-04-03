@@ -8,3 +8,6 @@
 **/local
 **/lib
 **/dev
+*.ts
+*.json
+*.js
