@@ -9,13 +9,11 @@
  *                                                                           *
  * Copyright 2019 - 2020 Mozilla Public License 2.0                          *
  *-------------------------------------------------------------------------- */
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column } from 'typeorm';
+import { BaseEntity } from './base.entity';
 
 @Entity()
-export class AuthLog {
-  @PrimaryGeneratedColumn()
-  id: number;
-
+export class AuthLog extends BaseEntity {
   @Column()
   private loginIp: string;
 
