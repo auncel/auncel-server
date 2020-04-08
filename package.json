@@ -86,7 +86,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "yarn lint"
+      "eslint --fix"
     ],
     "*.{css,scss}": [
       "stylelint --fix"
