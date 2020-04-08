@@ -21,6 +21,7 @@
     "import/prefer-default-export": 0,
     "import/no-extraneous-dependencies": 1,
     "no-useless-constructor": 0,
-    "no-empty-function": 1
+    "no-empty-function": 1,
+    "import/extensions": 0
   }
 }
