@@ -7,5 +7,6 @@
   "database": "auncel_user_nest",
   "entities": ["dist/**/*.entity{.ts,.js}"],
   "synchronize": true,
+  "autoLoadEntities": true,
   "logging": "all"
 }
