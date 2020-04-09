@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "user": { "id": 1 },
+    "identityType": "email",
+    "identifier": "me@yidafu.dev",
+    "credential": "password",
+    "verifiled": 1
+  },
+  {
+    "id": 2,
+    "user": { "id": 2 },
+    "identityType": "email",
+    "identifier": "test1@yidafu.dev",
+    "credential": "password",
+    "verifiled": 0
+  },
+  {
+    "id": 3,
+    "user": { "id": 3 },
+    "identityType": "github",
+    "identifier": "test2@yidafu.dev",
+    "credential": "password",
+    "verifiled": 1
+  }
+]

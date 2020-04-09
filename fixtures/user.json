@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "username": "fudayi",
+    "realname": "dov yih",
+    "avatar": "https://tse3-mm.cn.bing.net/th?id=OIP.6O_Ku2ttjnYB-EE78KwBtgAAAA&pid=Api&rs=1",
+    "slogan": "a long long long slogan",
+    "status": "alive",
+    "role": 1,
+    "registerIp": "127.0.0.1",
+    "school": "HDU"
+  },
+  {
+    "id": 2,
+    "username": "testing-user",
+    "realname": "testing user",
+    "avatar": "https://tse3-mm.cn.bing.net/th?id=OIP.6O_Ku2ttjnYB-EE78KwBtgAAAA&pid=Api&rs=1",
+    "slogan": "a long long long slogan",
+    "status": "alive",
+    "role": 1,
+    "registerIp": "127.0.0.1",
+    "school": "HDU"
+  },
+  {
+    "id": 3,
+    "username": "fake-user-1",
+    "realname": "fake user 1",
+    "avatar": "https://tse3-mm.cn.bing.net/th?id=OIP.6O_Ku2ttjnYB-EE78KwBtgAAAA&pid=Api&rs=1",
+    "slogan": "a long long long slogan",
+    "status": "alive",
+    "role": 1,
+    "registerIp": "127.0.0.1",
+    "school": "HDU"
+  }
+]
