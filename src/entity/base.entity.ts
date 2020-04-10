@@ -17,10 +17,10 @@ export class BaseEntity {
   id: number;
 
   @CreateDateColumn({ type: 'datetime' })
-  private createdAt: Date;
+  public createdAt: Date;
 
   @UpdateDateColumn({ type: 'datetime' })
-  private updatedAt: Date;
+  public updatedAt: Date;
 
   toString() {
     return `${Object.keys(this)

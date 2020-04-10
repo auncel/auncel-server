@@ -16,28 +16,28 @@ import { BaseEntity } from './base.entity';
 @Entity()
 export class User extends BaseEntity {
   @Column()
-  private username: string;
+  public username: string;
 
   @Column()
-  private realname: string;
+  public realname: string;
 
   @Column()
-  private avatar: string;
+  public avatar: string;
 
   @Column()
-  private slogan: string;
+  public slogan: string;
 
   @Column()
-  private role: number;
+  public role: number;
 
   @Column()
-  private status: string;
+  public status: string;
 
   @Column()
-  private registerIp: string;
+  public registerIp: string;
 
   @Column()
-  private school: string;
+  public school: string;
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   // eslint-disable-next-line no-unused-vars

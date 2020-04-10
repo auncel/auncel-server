@@ -15,11 +15,11 @@ import { BaseEntity } from './base.entity';
 @Entity()
 export class AuthLog extends BaseEntity {
   @Column()
-  private loginIp: string;
+  public loginIp: string;
 
   @Column()
-  private title: string;
+  public title: string;
 
   @Column()
-  private content: string;
+  public content: string;
 }

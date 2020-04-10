@@ -18,19 +18,19 @@ import { BaseEntity } from './base.entity';
 @Entity()
 export class UserAuth extends BaseEntity {
   @Column()
-  private identityType: string;
+  public identityType: string;
 
   @Column()
-  private identifier: string;
+  public identifier: string;
 
   @Column()
-  private credential: string;
+  public credential: string;
 
   @Column()
-  private verifiled: boolean;
+  public verifiled: boolean;
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   // eslint-disable-next-line no-unused-vars
-  @ManyToOne(type => User, user => user.userAuths)
+  @ManyToOne(type => User, user => user.userAuths, { eager: true })
   public user: User;
 }
