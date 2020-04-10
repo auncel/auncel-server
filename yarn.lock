@@ -874,6 +874,11 @@
     "@types/qs" "*"
     "@types/serve-static" "*"
 
+"@types/identicon.js@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.npm.taobao.org/@types/identicon.js/download/@types/identicon.js-2.3.0.tgz#b1c8df6dbaaabf569b7b2ab3c3a32910f0ea9bc2"
+  integrity sha1-scjfbbqqv1abeyqzw6MpEPDqm8I=
+
 "@types/ioredis@^4.0.4":
   version "4.14.9"
   resolved "https://registry.npm.taobao.org/@types/ioredis/download/@types/ioredis-4.14.9.tgz#774387d44d3ad60e1b849044b2b28b96e5813866"
@@ -4758,6 +4763,11 @@ iconv-lite@0.4.24, iconv-lite@^0.4.24, iconv-lite@^0.4.4:
   integrity sha1-ICK0sl+93CHS9SSXSkdKr+czkIs=
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
+
+identicon.js@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.npm.taobao.org/identicon.js/download/identicon.js-2.3.3.tgz#c505b8d60ecc6ea13bbd991a33964c44c1ad60a1"
+  integrity sha1-xQW41g7MbqE7vZkaM5ZMRMGtYKE=
 
 ieee754@^1.1.4:
   version "1.1.13"
