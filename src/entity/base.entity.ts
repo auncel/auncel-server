@@ -23,10 +23,10 @@ export class BaseEntity {
   public updatedAt: Date;
 
   toString() {
-    return `${Object.keys(this)
+    return Object.keys(this)
       .reduce(
         (acc, curr) => `${acc} ${curr}: ${this[curr]},`,
         `${this.constructor.name} {`,
-      )}}`;
+      );
   }
 }

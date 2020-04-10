@@ -14,7 +14,7 @@ import { BaseEntity } from './base.entity';
 
 @Entity()
 export class AuthLog extends BaseEntity {
-  @Column()
+  @Column({ default: 'localhost' })
   public loginIp: string;
 
   @Column()

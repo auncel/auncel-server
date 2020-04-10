@@ -26,11 +26,16 @@ export class UserAuth extends BaseEntity {
   @Column()
   public credential: string;
 
-  @Column()
+  @Column({ default: false })
   public verifiled: boolean;
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   // eslint-disable-next-line no-unused-vars
   @ManyToOne(type => User, user => user.userAuths, { eager: true })
   public user: User;
+
+  constructor(partial: Partial<UserAuth> = {}) {
+    super();
+    Object.assign(this, partial);
+  }
 }

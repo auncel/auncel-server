@@ -18,29 +18,34 @@ export class User extends BaseEntity {
   @Column()
   public username: string;
 
-  @Column()
+  @Column({ nullable: true })
   public realname: string;
 
-  @Column()
+  @Column({ type: 'text' })
   public avatar: string;
 
-  @Column()
+  @Column({ nullable: true })
   public slogan: string;
 
-  @Column()
+  @Column({ default: 1 })
   public role: number;
 
-  @Column()
+  @Column({ default: 'active' })
   public status: string;
 
   @Column()
   public registerIp: string;
 
-  @Column()
+  @Column({ nullable: true })
   public school: string;
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   // eslint-disable-next-line no-unused-vars
-  @OneToMany(type => UserAuth, userAuth => userAuth.user)
+  @OneToMany(() => UserAuth, userAuth => userAuth.user)
   public userAuths: UserAuth[];
+
+  constructor(partial: Partial<User> = {}) {
+    super();
+    Object.assign(this, partial);
+  }
 }
