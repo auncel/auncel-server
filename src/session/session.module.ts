@@ -2,8 +2,8 @@ import * as ConnectRedis from 'connect-redis';
 import * as session from 'express-session';
 import { NestSessionOptions, SessionModule } from 'nestjs-session';
 import { RedisService } from 'nestjs-redis';
-import { ConfigService } from '../config/config.service';
-import { ConfigModule } from '../config/config.module';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+
 import { Redis } from '../redis/redis.module';
 
 const RedisStore = ConnectRedis(session);
@@ -20,7 +20,7 @@ export const Session = SessionModule.forRootAsync({
     return {
       session: {
         store,
-        secret: config.SESSION_SECRET,
+        secret: config.get<string>('session.secret', 'password'),
       },
     };
   },

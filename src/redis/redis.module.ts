@@ -1,13 +1,12 @@
 import { DynamicModule } from '@nestjs/common';
 import { RedisModule, RedisModuleOptions } from 'nestjs-redis';
-import { ConfigModule } from '../config/config.module';
-import { ConfigService } from '../config/config.service';
+import { ConfigModule, ConfigService } from '@nestjs/config';
 
 export const Redis: DynamicModule = RedisModule.forRootAsync({
   imports: [ConfigModule],
   inject: [ConfigService],
   useFactory: (config: ConfigService): RedisModuleOptions => ({
-    host: config.REDIS_HOST,
-    port: config.REDIS_PORT,
+    host: config.get<string>('redis.host', 'localhost'),
+    port: config.get<number>('redis.port', 6379),
   }),
 });
