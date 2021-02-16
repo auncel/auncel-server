@@ -9260,9 +9260,9 @@ synesthesia@^1.0.1:
     css-color-names "0.0.3"
 
 systeminformation@^4.14.16:
-  version "4.23.2"
-  resolved "https://registry.npm.taobao.org/systeminformation/download/systeminformation-4.23.2.tgz?cache=0&sync_timestamp=1586353863449&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsysteminformation%2Fdownload%2Fsysteminformation-4.23.2.tgz#ec85aeffa316a4154fa2901dd82ea45438b15c5a"
-  integrity sha1-7IWu/6MWpBVPopAd2C6kVDixXFo=
+  version "4.34.13"
+  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-4.34.13.tgz#4d6bdf451369aa137e7b445bf700ba5b82dd6fa0"
+  integrity sha512-K3h3ofFOvXgsGAoACcGEG+T+X9Kq1xRk1bJS+p6JOd2U4mDFkIOW03u2wSCcVMuCq/NsM/piALNt1u3DrQftlw==
 
 table@^4.0.1:
   version "4.0.3"
